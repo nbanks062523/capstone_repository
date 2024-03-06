@@ -1,0 +1,15 @@
+# google cloud config
+project: debweek7-nb
+dataset: Obesity
+
+# data files
+FoodInflation_data: FoodInflation.csv
+MonthlyGroceryPrices_data: MonthlyGroceryPrices.csv
+SNAPNum_Pov_data: SNAPNum_Pov.csv
+SNAPPop_data: SNAPPop.csv
+SNAPPrgPartc_data: SNAPPrgPartc.csv
+
+
+
+
+
