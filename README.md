@@ -10,6 +10,14 @@ Git hub, Visual Studio Code, Airflow, Docker, Google Big Query
 # Languages and tools used: 
 DAG Python Operators
 
+# Websites used for Research
+"https://www.geeksforgeeks.org/adverbs-of-degree/?ref=previous_article"
+
+"https://www.geeksforgeeks.org/quantitative-adjective/"
+
+"https://acrobat.adobe.com/id/urn:aaid:sc:US:6dbb8b25-7fae-4978-97aa-2e8fcc287dda?viewer%21megaVerb=group-discover" 
+
+
 # Project Overview
 In many organizations, performance metrics are an important part of company culture. It is an important method used to ensure that the goals of the organization as a whole are met as well as helps to develop employees professionally. Through performance programs, it makes it easier to identify top performers and those that may need help. This project takes a look at the quality of performance goals that have been entered by one company and rates the quality of the goals based on the SMART (Specific, Measurable, Achievable,Relevant and Time Bound) goals model.
 
