@@ -7,9 +7,9 @@ from airflow.hooks.filesystem import FSHook
 from airflow.operators.empty import EmptyOperator
 
 # local imports
-from dsa_utils.nb_utils import logger, config
-from dsa_utils.nb_table_definitions import create_table, get_client
-from dsa_utils.nb_table_loaders import load_table, DATA_FILES
+from dsa_utils.utils import logger, config
+from dsa_utils.table_definitions import create_table, get_client
+from dsa_utils.table_loaders import load_table, DATA_FILES
 
 ######################### Checklist tasks ######################
 
@@ -40,7 +40,7 @@ def check_bigquery_client():
 
 ################################ Create DAG #########################################
 with DAG(
-    dag_id='load_food_data',
+    dag_id='load_SMARTGoals',
     schedule_interval='@once',
     start_date=datetime.utcnow(),
     catchup=False,
@@ -76,7 +76,7 @@ with DAG(
 # create an empty operator for branching the table creation tasks
     t1 = EmptyOperator(task_id='create_tables')
     
-    table_names = ('food_inflation_BM', 'grocery_prices_BM','snap_poverty_pop','snap_population','snap_program_part')
+    table_names = ('SMARTGoals_FY22_24', 'PerfRatings_FY22_23')
 
 # create a separate task for creating each table
     create_tasks = []

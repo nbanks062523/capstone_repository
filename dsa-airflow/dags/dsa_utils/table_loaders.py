@@ -3,7 +3,7 @@ from google.cloud import bigquery
 from google.cloud.exceptions import NotFound
 
 # local module imports
-from dsa_utils.nb_utils import logger, config, DATA_DIR
+from dsa_utils.utils import logger, config, DATA_DIR
 
 
 # setup the bigquery client
@@ -34,11 +34,8 @@ def get_client() -> bigquery.Client:
 # global variable to hold data files
 # the 'config' is referencing the config.yml file which maps the csv files to a variable 
 DATA_FILES = {
-    'food_inflation_BM': os.path.join(DATA_DIR, config['FoodInflation_data']),
-    'grocery_prices_BM': os.path.join(DATA_DIR, config['MonthlyGroceryPrices_data']),
-    'snap_poverty_pop': os.path.join(DATA_DIR, config['SNAPNum_Pov_data']),
-    'snap_population': os.path.join(DATA_DIR, config['SNAPPop_data']),
-    'snap_program_part': os.path.join(DATA_DIR, config['SNAPPrgPartc_data']),
+    'SMARTGoals_FY22_24': os.path.join(DATA_DIR, config['SMARTgoals_data']),
+    'PerfRatings_FY22_23': os.path.join(DATA_DIR, config['PerfRatings_data']),
 }
  
 
@@ -47,7 +44,7 @@ def load_table(table_name: str):
     Load CSV files to BigQuery
 
     Args:
-        table_name (str): must be one of the following: food_inflation_BM,grocery_prices_BM,snap_poverty_pop,snap_population, snap_program_part
+        table_name (str): must be one of the following: SMARTGoals_FY22_24,PerfRatings_FY22_23
     """
     # make sure table_name is one of our data files
     assert table_name in DATA_FILES, f"Unknown table name: {table_name}"
