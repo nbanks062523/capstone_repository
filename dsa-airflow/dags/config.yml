@@ -1,13 +1,10 @@
 # google cloud config
 project: debweek7-nb
-dataset: Obesity
+dataset: babynames
 
-# data files
-FoodInflation_data: FoodInflation.csv
-MonthlyGroceryPrices_data: MonthlyGroceryPrices.csv
-SNAPNum_Pov_data: SNAPNum_Pov.csv
-SNAPPop_data: SNAPPop.csv
-SNAPPrgPartc_data: SNAPPrgPartc.csv
+# data files, this is used in the 'table_loaders.py' file
+SMARTgoals_data: SMARTgoals_final.csv
+PerfRatings_data: Ratings22_23.csv
 
 
 
