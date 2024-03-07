@@ -12,7 +12,8 @@ DAG Python Operators
 
 # Project Overview
 In many organizations, performance metrics are an important part of company culture. It is an important method used to ensure that the goals of the organization as a whole are met as well as helps to develop employees professionally. Through performance programs, it makes it easier to identify top performers and those that may need help. This project takes a look at the quality of performance goals that have been entered by one company and rates the quality of the goals based on the SMART (Specific, Measurable, Achievable,Relevant and Time Bound) goals model.
-
+![Image](https://github.com/nbanks062523/capstone_repository/blob/e401dec36dafcc1b7c6de130f8c26f37b6f6d7f7/dsa-airflow/data/SMARTCriteria.png)
+---
 # Description:
 In this project, Airflow was used to orchestrate a workflow that did the following:
 1.Create a DAG (Directed Acyclic Graph) that executed tasks to add CSV files to Google Cloud
@@ -22,8 +23,6 @@ In this project, Airflow was used to orchestrate a workflow that did the followi
     4. The next task runs a loop that loads each table
     5. Finally, another empty operator is used to bring the tasks back together 
 ---
-![Image](https://github.com/nbanks062523/capstone_repository/blob/e401dec36dafcc1b7c6de130f8c26f37b6f6d7f7/dsa-airflow/data/SMARTCriteria.png)
-
 # Setup/Installation Requirements:
 - To see the code files in this project:
   1. Clone the repo in Git Hub: 
@@ -54,7 +53,8 @@ In this project, Airflow was used to orchestrate a workflow that did the followi
   2. Either press CTRL + C or type "docker compose down"
   3. Type "docker system prune --volumes" to remove all volumes from the docker container
   4. type "docker volume list" to confirm that there are no volumes
-   
+
+---
 # Known Bugs
 Due to Google Permission issues, the DAG failed in Airflow
 ![Image](https://github.com/nbanks062523/capstone_repository/blob/e401dec36dafcc1b7c6de130f8c26f37b6f6d7f7/dsa-airflow/data/DockerError_030724.png)
