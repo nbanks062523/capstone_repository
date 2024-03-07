@@ -21,6 +21,8 @@ In this project, Airflow was used to orchestrate a workflow that did the followi
     3. The first 2 tasks run the checklist functions, followed by an empty operator for branching the table creation tasks
     4. The next task runs a loop that loads each table
     5. Finally, another empty operator is used to bring the tasks back together 
+---
+![Image](https://github.com/nbanks062523/capstone_repository/blob/e401dec36dafcc1b7c6de130f8c26f37b6f6d7f7/dsa-airflow/data/SMARTCriteria.png)
 
 # Setup/Installation Requirements:
 - To see the code files in this project:
@@ -55,6 +57,7 @@ In this project, Airflow was used to orchestrate a workflow that did the followi
    
 # Known Bugs
 Due to Google Permission issues, the DAG failed in Airflow
+![Image](https://github.com/nbanks062523/capstone_repository/blob/e401dec36dafcc1b7c6de130f8c26f37b6f6d7f7/dsa-airflow/data/DockerError_030724.png)
 
 # Project Visuals
 ## DAG 
@@ -63,10 +66,7 @@ The DAG Diagram in this project shows the order of tasks and their dependencies,
 ## DAG Final Outcome
 As shown in the image the DAG failed several times due to Google permission issues 
 
-![Image](https://github.com/nbanks062523/code_review_wk14/blob/6c5dea04c7b297e1933e6297a24483e99800f5a1/DAGFinalResults_Week14.png)
-
-![Image](https://github.com/nbanks062523/code_review_wk14/blob/6c5dea04c7b297e1933e6297a24483e99800f5a1/DAG_graph_Final.png)
-
+![Image](https://github.com/nbanks062523/capstone_repository/blob/e401dec36dafcc1b7c6de130f8c26f37b6f6d7f7/dsa-airflow/data/AirflowStatus_030724.png)
 
 ---
 # License
